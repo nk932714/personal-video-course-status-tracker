@@ -10,7 +10,7 @@ $mystring = file_get_contents("mod.txt");
 if(strpos($mystring, $word) !== false){
     
     $subtitles1 = str_replace($word,$lrntword,$mystring);
-    file_put_contents("mod.txt",$subtitles1);
+    file_put_contents("course.txt",$subtitles1);
     echo "done";
     
 }
